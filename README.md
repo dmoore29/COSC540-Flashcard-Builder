@@ -1,1 +1,1 @@
-# COSC540-AI-Assistant
+# COSC540-Flashcard Builder
