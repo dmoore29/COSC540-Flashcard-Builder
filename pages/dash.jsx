@@ -2,7 +2,7 @@ import React from 'react'
 import "../app/globals.css"
 import Sidebar from '../components/sidebar'
 
-const Home = () => {
+const Dash = () => {
   return (
     <div>
       <Sidebar />
@@ -11,4 +11,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Dash
