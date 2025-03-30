@@ -21,8 +21,8 @@ export default function Example() {
             <span className="sr-only">Your Company</span>
             <img
               alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
+              src="/images/dtLogo.png"
+              className="h-40 w-auto"
             />
           </a>
         </div>
@@ -63,7 +63,7 @@ export default function Example() {
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                src="/images/dtLogo.png"
                 className="h-8 w-auto"
               />
             </a>
