@@ -3,8 +3,25 @@ import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../public/images/logo.png'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
+import axios from 'axios';
+
 
 export default function Profnav() {
+
+  const router = useRouter();
+
+  const handleLogout = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('/api/auth/logout');
+      router.push('/login');
+    } catch (err) {
+      console.error('Logout failed', err);
+    }
+  };
+
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
@@ -107,13 +124,14 @@ export default function Profnav() {
                     </a>
                   </MenuItem>
                   <MenuItem>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
+                    <button
+                      onClick={handleLogout}
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
                     >
                       Sign out
-                    </a>
+                    </button>
                   </MenuItem>
+
                 </MenuItems>
               </Menu>
             </div>
@@ -191,12 +209,13 @@ export default function Profnav() {
               Settings
             </DisclosureButton>
             <DisclosureButton
-              as="a"
-              href="#"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+              as="button"
+              onClick={handleLogout}
+              className="block w-full text-left rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
             >
               Sign out
             </DisclosureButton>
+
           </div>
         </div>
       </DisclosurePanel>
