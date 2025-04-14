@@ -21,7 +21,6 @@ export default async function handler(req, res) {
     const users = db.collection('users');
 
     const existingUser = await users.findOne({ email });
-
     if (existingUser) {
       return res.status(409).json({ error: 'Email already registered' });
     }
@@ -35,15 +34,17 @@ export default async function handler(req, res) {
       password: hashedPassword,
     });
 
+    // Create a user object consistent with login, using _id
     const newUser = {
-      id: result.insertedId,
+      _id: result.insertedId,
       email,
     };
 
-    const token = generateToken(newUser);
+    // Await token generation
+    const token = await generateToken(newUser);
     setAuthCookie(res, token);
 
-    return res.status(201).json({ message: 'User registered successfully', user: newUser });
+    return res.status(201).json({ message: 'User registered successfully', user: { id: result.insertedId, email } });
   } catch (error) {
     console.error('Registration Error:', error);
     return res.status(500).json({ error: 'Something went wrong.' });

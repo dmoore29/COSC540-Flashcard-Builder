@@ -16,7 +16,8 @@ export default async function handler(req, res) {
   const isValid = await comparePassword(password, user.password);
   if (!isValid) return res.status(401).json({ error: 'Invalid credentials.' });
 
-  const token = generateToken(user);
+  // Await token generation using jose
+  const token = await generateToken(user);
   setAuthCookie(res, token);
 
   res.status(200).json({ message: 'Logged in', user: { id: user._id, email: user.email } });

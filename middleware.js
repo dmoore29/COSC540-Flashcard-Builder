@@ -3,7 +3,7 @@ import { verifyToken } from '@/lib/auth';
 import { jwtVerify } from 'jose';
 
 // Adjust this path to protect specific routes
-const protectedRoutes = ['/dash', '/profile'];
+const protectedRoutes = ['/dash', '/profile', '/addCard'];
 
 export async function middleware(req) {
   const { pathname } = req.nextUrl;

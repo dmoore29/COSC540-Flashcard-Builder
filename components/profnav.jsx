@@ -15,7 +15,7 @@ export default function Profnav() {
     e.preventDefault();
     try {
       await axios.post('/api/auth/logout');
-      router.push('/login');
+      router.push('/');
     } catch (err) {
       console.error('Logout failed', err);
     }
@@ -37,7 +37,7 @@ export default function Profnav() {
             <div className="hidden lg:ml-6 lg:block">
               <div className="flex space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">
+                <a href="/dash" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">
                   Dashboard
                 </a>
                 <a

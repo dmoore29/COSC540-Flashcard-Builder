@@ -1,0 +1,230 @@
+{
+    "decks": [
+      {
+        "topic": "History",
+        "flashcards": [
+          {
+            "front": "Who was the first President of the United States?",
+            "back": "George Washington"
+          },
+          {
+            "front": "What year did World War II end?",
+            "back": "1945"
+          },
+          {
+            "front": "Which ancient civilization built the pyramids?",
+            "back": "The Egyptians"
+          },
+          {
+            "front": "What was the Renaissance?",
+            "back": "A cultural rebirth in Europe from the 14th to 17th centuries"
+          },
+          {
+            "front": "Who was known as the 'Maid of Orléans'?",
+            "back": "Joan of Arc"
+          }
+        ]
+      },
+      {
+        "topic": "Biology",
+        "flashcards": [
+          {
+            "front": "What is the basic unit of life?",
+            "back": "The cell"
+          },
+          {
+            "front": "What process do plants use to convert sunlight into energy?",
+            "back": "Photosynthesis"
+          },
+          {
+            "front": "What is the study of heredity called?",
+            "back": "Genetics"
+          },
+          {
+            "front": "What molecule carries genetic instructions?",
+            "back": "DNA"
+          },
+          {
+            "front": "What is the process by which cells divide?",
+            "back": "Mitosis"
+          }
+        ]
+      },
+      {
+        "topic": "Computer Science",
+        "flashcards": [
+          {
+            "front": "What does 'HTML' stand for?",
+            "back": "HyperText Markup Language"
+          },
+          {
+            "front": "What is the purpose of CSS in web development?",
+            "back": "Styling and layout of web pages"
+          },
+          {
+            "front": "What is an algorithm?",
+            "back": "A set of instructions to solve a problem"
+          },
+          {
+            "front": "What does 'API' stand for?",
+            "back": "Application Programming Interface"
+          },
+          {
+            "front": "What is Big O notation used for?",
+            "back": "Describing the performance or complexity of an algorithm"
+          }
+        ]
+      },
+      {
+        "topic": "Physics",
+        "flashcards": [
+          {
+            "front": "What is Newton's First Law?",
+            "back": "An object in motion stays in motion unless acted upon by an external force"
+          },
+          {
+            "front": "What is the speed of light in a vacuum?",
+            "back": "Approximately 299,792,458 meters per second"
+          },
+          {
+            "front": "What does E=mc^2 represent?",
+            "back": "The equivalence of energy and mass"
+          },
+          {
+            "front": "What is the unit of force?",
+            "back": "Newton (N)"
+          },
+          {
+            "front": "What is the acceleration due to gravity on Earth?",
+            "back": "Approximately 9.8 m/s²"
+          }
+        ]
+      },
+      {
+        "topic": "Microbiology",
+        "flashcards": [
+          {
+            "front": "What is a prokaryote?",
+            "back": "A microorganism without a nucleus, like bacteria"
+          },
+          {
+            "front": "What technique is used to amplify DNA?",
+            "back": "Polymerase Chain Reaction (PCR)"
+          },
+          {
+            "front": "What is the role of a virus?",
+            "back": "To infect host cells and replicate"
+          },
+          {
+            "front": "Which microorganism is known for causing tuberculosis?",
+            "back": "Mycobacterium tuberculosis"
+          },
+          {
+            "front": "What is the study of fungi called?",
+            "back": "Mycology"
+          }
+        ]
+      },
+      {
+        "topic": "Criminal Justice",
+        "flashcards": [
+          {
+            "front": "What is the primary goal of the criminal justice system?",
+            "back": "To maintain public safety and enforce laws"
+          },
+          {
+            "front": "What does the term 'due process' refer to?",
+            "back": "Legal procedures that ensure fair treatment"
+          },
+          {
+            "front": "What is the difference between a felony and a misdemeanor?",
+            "back": "Felonies are serious crimes, while misdemeanors are less severe"
+          },
+          {
+            "front": "What role does a defense attorney play?",
+            "back": "To represent and defend the accused"
+          },
+          {
+            "front": "What is the purpose of rehabilitation in criminal justice?",
+            "back": "To reform offenders and reduce recidivism"
+          }
+        ]
+      },
+      {
+        "topic": "Chemistry",
+        "flashcards": [
+          {
+            "front": "What is the periodic table?",
+            "back": "A chart of the chemical elements arranged by atomic number"
+          },
+          {
+            "front": "What is an atom?",
+            "back": "The basic unit of a chemical element"
+          },
+          {
+            "front": "What is a chemical reaction?",
+            "back": "A process that leads to the transformation of substances"
+          },
+          {
+            "front": "What is the pH scale used for?",
+            "back": "To measure the acidity or alkalinity of a solution"
+          },
+          {
+            "front": "What is the difference between an ionic and covalent bond?",
+            "back": "Ionic bonds involve electron transfer; covalent bonds involve sharing electrons"
+          }
+        ]
+      },
+      {
+        "topic": "Art",
+        "flashcards": [
+          {
+            "front": "Who painted the Mona Lisa?",
+            "back": "Leonardo da Vinci"
+          },
+          {
+            "front": "What art movement is known for its spontaneous expression?",
+            "back": "Abstract Expressionism"
+          },
+          {
+            "front": "What is the primary focus of Renaissance art?",
+            "back": "Humanism and realism"
+          },
+          {
+            "front": "What technique involves layering thin glazes of paint?",
+            "back": "Glazing"
+          },
+          {
+            "front": "What is Cubism?",
+            "back": "An art movement that uses geometric shapes and fragmented subject matter"
+          }
+        ]
+      },
+      {
+        "topic": "Information Technology",
+        "flashcards": [
+          {
+            "front": "What does IT stand for?",
+            "back": "Information Technology"
+          },
+          {
+            "front": "What is the primary function of a computer network?",
+            "back": "To enable communication between computers"
+          },
+          {
+            "front": "What is cloud computing?",
+            "back": "Using remote servers hosted on the internet to store and manage data"
+          },
+          {
+            "front": "What is cybersecurity?",
+            "back": "The practice of protecting systems and networks from digital attacks"
+          },
+          {
+            "front": "What does 'IoT' stand for?",
+            "back": "Internet of Things"
+          }
+        ]
+      }
+    ]
+  }
+  
