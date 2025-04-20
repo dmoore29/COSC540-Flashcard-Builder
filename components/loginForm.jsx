@@ -18,6 +18,17 @@ export default function LoginForm() {
 
   const loginHandleSubmit = async (e) => {
     e.preventDefault();
+
+    //Basic Validation
+    if (!user.email) {
+      alert('Email is required');
+      return;
+    }
+    if (!user.password) {
+      alert('Password is required');
+      return;
+    }
+
     try {
       const res = await axios.post('/api/auth/login', user, {
         withCredentials: true, // include cookie in browser
