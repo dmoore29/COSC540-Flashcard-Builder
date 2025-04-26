@@ -20,11 +20,19 @@ module.exports = {
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__mocks__/fileMock.js'
   },
 
-  // Use Babel to transform modern JS / JSX for Jest
   transform: {
-    '^.+\\.(js|jsx|mjs)$': 'babel-jest'
+    '^.+\\.(js|jsx|mjs)$': [
+      '@swc/jest',
+      {
+        jsc: {
+          parser: { syntax: 'ecmascript', jsx: true },
+          transform: { react: { runtime: 'automatic' } }
+        },
+        module: { type: 'es6' }
+      }
+    ]
   },
-
+  
   transformIgnorePatterns: [
     '/node_modules/(?!(jose|axios)/)'
   ],

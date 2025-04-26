@@ -79,8 +79,6 @@
    Utility modules like `lib/hash.js` are invoked directly and their return values asserted.
 4. **Component tests under jsdom**  
    React components are rendered in a simulated browser (`jsdom`) using `@testing-library/react`, and user interactions are simulated via `@testing-library/user-event`.
-5. **Babel & alias support**  
-   Jest uses `babel-jest` to transform ESModule/JSX syntax and resolve aliases (`@/…`), so tests can match your source code style.
 6. **Fast feedback**  
    Because no real I/O or external servers are involved, unit tests run in milliseconds and can be run in watch mode for rapid development.
 
