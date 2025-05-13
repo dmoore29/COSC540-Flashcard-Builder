@@ -110,7 +110,7 @@ export default function AddCardForm({ user }) {
       <h2 className="text-xl font-semibold mb-4">Add Flashcard</h2>
       {message && <p className="mb-4 text-sm text-blue-600">{message}</p>}
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4" data-testid="add-card-form">
         <input
           name="topic"
           placeholder="Topic"
@@ -140,6 +140,7 @@ export default function AddCardForm({ user }) {
           value={form.public}
           onChange={handleChange}
           className="w-full p-2 border rounded"
+          data-testid="public-select"
         >
           <option value="no">Private</option>
           <option value="yes">Public</option>
@@ -152,6 +153,7 @@ export default function AddCardForm({ user }) {
             value={form.deckChoice}
             onChange={handleChange}
             className="w-full p-2 border rounded"
+            data-testid="deck-select"
           >
             <option value="">-- Select a deck --</option>
             {decks.map((deck) => (
