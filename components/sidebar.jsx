@@ -6,10 +6,20 @@ import Link from 'next/link';
 import { BiSolidAddToQueue, BiSolidCabinet } from "react-icons/bi";
 import { RiCompassDiscoverLine } from "react-icons/ri";
 import { MdSettingsApplications } from "react-icons/md";
+import { FaHome, FaBook, FaGlobe, FaUpload, FaPlus, FaPlusCircle } from "react-icons/fa";
 
 export default function Sidebar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+
+  const menuItems = [
+    { href: '/dash', label: 'Dashboard', icon: <FaHome /> },
+    { href: '/your-decks', label: 'Your Decks', icon: <FaBook /> },
+    { href: '/public-decks', label: 'Public Decks', icon: <FaGlobe /> },
+    { href: '/upload-file', label: 'Upload File', icon: <FaUpload /> },
+    { href: '/addDeck', label: 'Create Deck', icon: <FaPlus /> },
+    { href: '/addCard', label: 'Add Card', icon: <FaPlusCircle /> },
+  ];
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-transparent text-gray-300 z-50'>
@@ -27,8 +37,8 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-300'>
-            <Link href="/Brewerjg" className='flex justify-between items-center w-full text-lg text-gray-950 ml-3.5'>
-              My Topics <BiSolidCabinet size={30} className='mr-4' />
+            <Link href="/upload-file" className='flex justify-between items-center w-full text-lg text-gray-950 ml-3.5'>
+              Upload File <BiSolidCabinet size={30} className='mr-4' />
             </Link>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-800'>

@@ -39,7 +39,7 @@ export default function FlashcardViewer() {
         console.log('Cards response:', response.data);
         setCards(response.data);
         
-        // Fetch deck stats
+
         const deckResponse = await axios.get(`/api/decks?deckId=${deckId}`, { withCredentials: true });
         if (deckResponse.data && deckResponse.data.stats) {
           setStats(deckResponse.data.stats);
@@ -75,17 +75,17 @@ export default function FlashcardViewer() {
   };
 
   const handleResponse = async (response) => {
-    if (!isFlipped) return; // Only track responses when card is flipped
+    if (!isFlipped) return; 
     
     try {
-      // Update stats in the database
+
       await axios.put(
         `/api/decks?deckId=${deckId}&action=track-response`,
         { response },
         { withCredentials: true }
       );
 
-      // Update local stats
+
       const newStats = {
         ...stats,
         [response]: stats[response] + 1,
@@ -93,7 +93,7 @@ export default function FlashcardViewer() {
       };
       setStats(newStats);
       
-      // Auto-advance to next card
+
       if (currentCardIndex < cards.length - 1) {
         setCurrentCardIndex(currentCardIndex + 1);
         setIsFlipped(false);
